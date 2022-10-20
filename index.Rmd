@@ -17,7 +17,7 @@ github-repo: rstudio/bookdown-demo
 
 # Introduccion a la asignatura {-}
 
-<center>![](Imagenes/Portada.png)</center>
+<center>![](Imagenes/sig.png)</center>
 
 ---
 
