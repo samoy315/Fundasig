@@ -1,6 +1,6 @@
 --- 
 title: "FUNDAMENTOS DE SIG"
-author: "Prof. Victor A. Sevilla"
+author: "Profesores Victor A. Sevilla y Jesus Viloria"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -15,46 +15,107 @@ link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---
 
-# About
+# Introduccion a la asignatura {-}
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+<center>![](Imagenes/Portada.png)</center>
 
-## Usage 
+---
 
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
+#### Bienvenida {-}
 
-Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
+Sean todo cordialmente bienvenidos a nuestra asignatura **Fundamentos de Sistemas de Información Geográfica (SIG)**. En nuestra Cátedra nos encontramos muy entusiasmados con el inicio de otro nuevo periodo, en donde lo acompañaremos en la aventura de aprender sobre los fundamentos básicos, objetivos, componentes, herramientas y aplicaciones prácticas de la tecnología de los SIG.
 
-The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
+**Fundamentos de SIG** es una asignatura que forma parte de la Especialización de Geomática de la Facultad de Agronomía de la Universidad Central de Venezuela y desde donde esperamos que este aprendizaje sea de utilidad dentro de su capacitación profesional.
 
-## Render book
+---
 
-You can render the HTML version of this example book without changing anything:
+### Instrucciones {-}
 
-1. Find the **Build** pane in the RStudio IDE, and
+En esta página encontrará diferentes elementos necesarios para cursar con éxito nuestra asignatura, como:  indicaciones generales, programación de actividades, sistemas de evaluación, materiales teóricos, práctica (guías), datos espaciales necesarios para el Ejercicio práctico, y bibliografías de interés para su lectura. También encontrará enlaces para la descarga de mucha de la información e inclusive link que lo llevaran a videos,  formularios y cuestionarios disponibles en la asignatura.
 
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
+También podrá revisar sus calificaciones, lo que le permitirá llevar un registro del rendimiento académico.
 
-Or build the book from the R console:
+---
 
-```{r, eval=FALSE}
-bookdown::render_book()
-```
+### Objetivos {-}
 
-To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
+#### Objetivo General {-}
 
-## Preview book
+El objetivo general de esta asignatura es introducir y capacitar a los estudiantes en la tecnología de los Sistemas de Información Geográfica, aplicando la misma en caracterizaciones de recursos naturales.
 
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
+#### Objetivos Especificos {-}  
 
-```{r eval=FALSE}
-bookdown::serve_book()
-```
+* Analizar espacialmente aspectos ambientales del terreno como la pendientes, hidrografía, suelos, vegetación, entre otros.
+* Determinar áreas de riesgos ambientales como las de inundación y erosión. 
+* Establecer posibles áreas de expansión urbana con bajo riesgo ambientales.
+* Practicar el manejo de ciertas herramientas típicas de la tecnología  SIG.
+
+---
+
+### Normas {-}
+
+###### Modalidad Presencial {-}
+
+Fundamentos de SIG es una asignatura de la especialización en Geomática de la Facultad de Agronomía de la Universidad Central de Venezuela. Correspondiente al Módulo II y se dicta intensivamente en 5 secciones Teórica-práctica de 8 horas de Lunes a Viernes en el horario de 8:00 am a 12:00 m y de 1:00 pm a 5:00 pm., en el Laboratorio de Agrología del departamento de Edafología.
+
+Las sesiones Teórico-prácticas son de obligatoria asistencia, tal como lo establece el reglamento vigente.
+
+La no asistencia o incumplimiento de las actividades programadas por la asignatura deberá ser informada por escrito a la Cátedra dentro de las 48 horas de haber ocurrido la falta, incluyendo las constancias y los avales necesarios para su justificación.
+
+Deberás entregar la comunicación y los avales respectivos en la Coordinación de la Especialización enviando correo electrónico al profesor Jesus Viloria (jesus.viloria@gmail.com) y al profesor Víctor Sevilla ( samoy315@gmail.com ), donde será considerada.
+
+La Especialización en Geomática, con sus profesores y todo el personal de apoyo, están a su disposición para orientarte y ayudarte a solventar los problemas que se le puedan presentar, siempre y cuando acudas a ellos, conozcan y acaten las reglas establecidas y asuma con responsabilidad el compromiso con la asignatura.
+
+###### Modalidad a distancia {-}
+
+La asignatura se dictará en la modalidad a distancia, con clases o reuniones sincrónicas dos veces a la semana con una duración de 1 hora cada una. Los días para estas clases o reuniones son los lunes de 10:00 a 11:00 am y los viernes de 10:00 a 11:00 pm. 
+
+Para las actividades a distancia dispondremos de varias opciones para el apoyo a los estudiantes: a) Realizaremos reuniones vía meet o zoom como se mencionó en donde su profesor estará atento a cualquier pregunta, duda o inquietud que tengas los estudiantes. b) la asignatura dispondrá de un canal o grupo en Telegram para aclarar dudas o proporcionar información general de interés para el éxito del semestre.
+
+---
+
+### Como aprobar? {-} 
+
+Para poder aprobar esta asignatura, deberá obtener una calificación mínima acumulada de 10 puntos (escala de 1 al 20 puntos), basado en la información que se presenta en el siguiente **Cuadro 1**. Las evaluaciones perdidas contarán como cero puntos.
+
+<center>***Cuadro 1**. Plan de evaluacion de la asignatura*</center>
+
+|Elementos|Porcentaje|Puntos|
+|---|---|---|
+|Dominio demostrado durante la realizacion del ejercicio practico|-|-|
+|Presentacion de los resultados del ejercicio practico|-|-|
+
+---
+
+### Profesores {-}
+
+Conozca nuestro personal docente en el **Cuadro 2**. y no está demás hacer de su conocimiento que estamos a su disposición para ayudarlo a avanzar en su proceso de formación y por eso, no dudes en contactarnos si lo requiere.
+
+<center> ***Cuadro 2.** Profesores de la asignatura **Fundamentos de SIG*** </center>
 
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+|Profesor|Correo|
+|:---:|:---:|
+|Victor Sevilla|samoy315@gmail.com|
+|Jesus Viloria|jesus.viloria@gmail.com|
+
+---
+
+### Calendario academico {-}
+
+A continuación en el Cuadro 3, se muestran los contenidos de la asignatura de **Evaluación de Tierras**, en su semana correspondiente. Cada unidad dispondrá de materiales de estudio (teóricos - prácticos), actividades y evaluaciones.
+
+Es importante tener en cuenta que **todas** Las evaluaciones se realizarán de manera presencial, en las semanas indicadas.
+
+<center>***Cuadro 3**. Calendario academico*</center>
+
+|Semana|Contenido|
+|:---:|:---|:---:|
+|1|Clasificación taxonómica de suelos|
+|2|Cartografía de suelos|
+|3|Variabilidad espacial de los suelos en Venezuela y **Prueba corta I**|
+|4|**Presentación oral de trabajo extra - aula**|
+|5|**Presentación de Examen teórico - práctico**|
+|6|Evaluación de tierras por su capacidad de uso agropecuario|
+|7|Directivas FAO: Cualidades y Tipos de utilización de Tierras|
+|8|Directivas FAO: Cualidad Humedad Disponible|
